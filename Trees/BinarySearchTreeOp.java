@@ -15,7 +15,7 @@ public class BinarySearchTreeOp {
     public void postorder() {
     postorderRec(root);
     }   
-    public void delete(){
+    public void delete(int key){
         root = deleteRec(root,key);
     }
     public boolean search(int key) {
@@ -58,13 +58,13 @@ public class BinarySearchTreeOp {
 
     postorderRec(root.left);
     postorderRec(root.right);
-    System.out.print(root.data + " ");
+    System.out.println(root.data);
 }
-    private void deleteRec(TreeNode root,int key){
+    private TreeNode deleteRec(TreeNode root,int key){
         if(root == null){
             return root;
         }
-        f (key < root.data) {
+        if (key < root.data) {
         root.left = deleteRec(root.left, key);
     } else if (key > root.data) {
         root.right = deleteRec(root.right, key);
