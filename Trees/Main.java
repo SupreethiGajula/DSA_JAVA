@@ -26,6 +26,13 @@ public class Main {
         System.out.println("------------------------------\n");
         InOrderIterative inorder = new InOrderIterative();
         inorder.inorderIterative(treeobj.root);
+        System.out.println();
+        System.out.println("Level Order Traversal");
+        LevelOrderTraversal lot = new LevelOrderTraversal();
+        lot.levelOrderTraversal(treeobj.root);
+        System.out.println("-------------------------------");
+        MaxElementInBinarytree maxEle = new MaxElementInBinarytree();
+        maxEle.findMaxBT(treeobj.root);
 
 
 
