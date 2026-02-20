@@ -20,6 +20,7 @@ class Solution {
         int result = 0;
         for (int count : map.values()) {
             // Number of pairs from count words with same set
+            //nc2 - binomial combinations n!/(n-2)!. 2!
             result += count * (count - 1) / 2;
         }
         
