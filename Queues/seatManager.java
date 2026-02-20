@@ -1,3 +1,7 @@
+// Reserve → poll() the smallest → O(log n)
+
+// Unreserve → add() back → O(log n)
+
 import java.util.PriorityQueue;
 
 class SeatManager {
