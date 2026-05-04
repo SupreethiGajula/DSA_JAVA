@@ -24,7 +24,11 @@ public class Main {
         addEdge(g, 3, 5);
 
         BFS bfs = new BFS();
+        System.out.println("BFS:\n");
         bfs.findBfs(g);
+        DFS dfsObj = new DFS();
+        System.out.println("DFS:\n");
+        dfsObj.dfs(g);
 
     }
     static void addEdge(List<List<Integer>> g, int u, int v) {
