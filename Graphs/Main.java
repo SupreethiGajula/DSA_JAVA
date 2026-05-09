@@ -30,6 +30,9 @@ public class Main {
         System.out.println("DFS:\n");
         dfsObj.dfs(g);
 
+        CycleInUndirectedDFS cycle = new CycleInUndirectedDFS();
+        System.out.println("Does the graph have cycle???");
+        System.out.println(cycle.isCycle(g)); 
     }
     static void addEdge(List<List<Integer>> g, int u, int v) {
     g.get(u).add(v);
