@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Stack;
 
 /** 
- * topological sort - KAHN'S algorithm 
+ * topological sort
  * it is basically possible in DAG-directed acyclic graphs
  * so topological sort says if there is a directed edge from u->v then 
  * u must always come before v in the sorted order 
