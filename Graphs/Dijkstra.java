@@ -11,7 +11,7 @@ public class Dijkstra {
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[src] = 0;
 
-        // Step 2: min heap (distance, vertex)
+        // Step 2: min heap (distance of the vertex, vertex)
         PriorityQueue<Pair> pq = new PriorityQueue<>((a,b) -> a.weight - b.weight);
 
         pq.offer(new Pair(0, src));
@@ -23,9 +23,9 @@ public class Dijkstra {
             int u = p.vertex;
             int currDist = p.distance;
 
-            // skip stale entries
-            if (currDist > dist[u])
-                continue;
+            // skip stale entries -- optional for optimisation
+            // if (currDist > dist[u])
+            //     continue;
 
             // Step 3: traverse neighbours
             for (Pair edge : weightedGraph.get(u)) {
