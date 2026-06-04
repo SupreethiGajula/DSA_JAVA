@@ -15,7 +15,8 @@ public class Pattern5 {
         int n=4;
         for(int i=0;i<n;i++){
             for(int j=i+1;j>0;j--){
-                System.out.print(j+" ");
+                System.err.print(j+ " ");
+                //System.out.print((char)(j+'A'-1)+" ");
             }
             System.out.println();
         }
