@@ -1,3 +1,15 @@
+/*
+
+
+1111
+ 222
+  33
+   4
+   
+   */
+
+
+
 public class Pattern8{
     public static void main(String[] args) {
         int n = 4;
