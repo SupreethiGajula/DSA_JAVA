@@ -3,7 +3,7 @@ package Random_Practice;
 public class PrimeNumber_func {
     public static void isPrimeNumber(int n){
         boolean isPrime= true;
-    for(int i=2;i<n;i++){
+    for(int i=2;i*i<n;i++){
         if(n%i == 0){
             isPrime = false;
         }
